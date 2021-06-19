@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Have a great evening</title>
+    <style>
+        html, body{
+            margin: 0;
+        }
+        h1{
+            position: relative; /* Đây là giá trị tương đối, lấy nó làm gốc tọa độ,khi di chuyển sẽ bị đè lên các phần tử khác */
+            top: 50px;
+        }
+        .box{
+            width: 100%;
+            height: 200px;
+            background-color: blue;
+            position: relative;
+        }
+        .box-1{
+            width: 60px;
+            height: 60px;
+            background-color: red;
+            position: absolute;       /* absolute là giá trị tuyệt đối
+                                         giá trị vị trí là absolute sẽ không chèn lên vị trí của phần tử khác
+                                   Note: Phần tử box-1 lấy phần tử  box là cha của nó làm gốc tọa độ
+                                         Vì phần tử box-1 là con của phần tử box
+                                         Và phần tử box được đặt vị trí position: relative;
+                                         Nên box-1 lấy cha của nó là box làm gốc tọa độ */
+            left: 50px;
+            bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box-1"></div>
+    </div>
+    <h1>Hello everyone</h1>
+    <p>Nice to meet you</p>
+    <p>I am long</p>
+    <p>And you</p>
+
+</body>
+</html>

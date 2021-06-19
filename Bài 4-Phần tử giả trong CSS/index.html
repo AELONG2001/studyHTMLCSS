@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Hello all</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+        .box::before{
+            content: "đầu";
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: red; /* :before là lớp giả hiển thị trước phần tử */
+
+        }
+        .box::after{
+            content: "cuối";
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: blue; /* :after là lớp giả hiển thị sau phần tử */
+        }
+        h1::first-letter{
+            color: rgb(210, 12, 236);
+            font-size: 50px; /* :first-letter là tạo hiệu ứng cho chữ cái đầu tiên trong văn bản */
+
+        }
+        h1::first-line{
+            color: green;
+            font-size: 60px; /* :first-line là tạo hiệu ứng cho dòng đầu tiên */
+        }
+        h1::selection{
+            color : yellow;
+            font-size: 80px;
+            background-color: purple; /* :selection là tạo hiệu ứng khi ta bôi chuột vào phần tử */
+        }
+    </style>
+</head>
+<body>
+    <h1>Đây là một đoạn văn</h1>
+    <h2>Đây là đoạn văn thứ 2</h2>
+    <div class="box"></div>
+</body>
+</html>

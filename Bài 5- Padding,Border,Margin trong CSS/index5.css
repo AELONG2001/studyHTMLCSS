@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.box{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+.box1{
+    background-color: red;
+    color: white;
+    border: 5px solid brown;
+}
+.box2{
+    background-color: blue;
+    color:white;
+    margin-left: 20px;
+    border: 3px solid #444;
+}
+.box3{
+    background-color: green;
+    color: white;
+    padding: 30px 0 50px 0;
+    border: 10px solid purple;
+    margin-left: 50px
+}
