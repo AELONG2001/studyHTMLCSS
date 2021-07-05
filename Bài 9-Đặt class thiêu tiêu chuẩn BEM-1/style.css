@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f5;
+}
+
+
+body > div{
+    margin: auto;
+}
+
+
+/* Block button */
+.btn{
+    min-width: 120px;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    outline: none; /* Bỏ hiệu ứng biên giới khi di chuột vào */
+    color: #fff;
+    background-color: transparent;
+    padding: 16px 32px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: opacity .2s ease ;
+}
+
+.btn + .btn{
+    margin-left: 20px;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+
+.btn--success{
+    background-color: green;   
+}
+
+
+.btn--warning{
+    background-color: orange ;   
+}
+
+
+.btn--danger{
+    background-color: purple;   
+}
+
+
+.btn--size-s{
+   padding: 8px 16px ;
+}
+
+.btn--size-l{
+   padding: 20px 40px;
+}
+

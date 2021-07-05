@@ -1,0 +1,647 @@
+
+* {
+    box-sizing: border-box;
+}
+.grid{
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+.library{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+/* Bỏ khoảng cách gutters cho row */
+.no-gutters{
+    margin-left: 0;
+    margin-right: 0;
+}
+/* column */
+.col{
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+/* Bỏ khoảng cách gutters cho col */
+.no-gutters .col{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+
+/* Mobie từ 740px trở xuống */
+@media (max-width: 46.25em) {
+/* 12 column for mobile */
+.m-0{
+    display: none;
+}
+
+.m-1{
+    flex: 0 0 8.33333%;
+    width: 8.33333%;
+}
+
+.m-2{
+    flex: 0 0 16.66667%;
+    width: 16.66667%;
+}
+
+.m-3{
+    flex: 0 0 25%;
+    width: 25%;
+}
+
+.m-4{
+    flex: 0 0 33.33333%;
+    width: 33.33333%;
+}
+
+.m-5{
+    flex: 0 0 41.66667%;
+    width: 41.66667%;
+}
+
+.m-6{
+    flex: 0 0 50%;
+    width: 50%;
+}
+
+.m-7{
+    flex: 0 0 58.33333%;
+    width: 58.33333%;
+}
+
+.m-8{
+    flex: 0 0 66.66667% ;
+    width: 66.66667%;
+}
+
+.m-9{
+    flex: 0 0 75%;
+    width: 75%;
+}
+
+.m-10{
+    flex: 0 0 83.33333%;
+    width: 83.33333%;
+}
+
+.m-11{
+    flex: 0 0 91.66667%;
+    width: 91.66667%;
+}
+
+.m-12{
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+
+/* Margin offset để đẩy phần tử */
+.m-o-1{
+    margin-left: 8.33333%;
+}
+
+.m-o-2{
+    margin-left: 16.66667%;
+}
+
+.m-o-3{
+    margin-left: 25%;
+}
+
+.m-o-4{
+    margin-left: 33.33333%;
+}
+
+.m-o-5{
+    margin-left: 41.66667%;
+}
+
+.m-o-6{
+    margin-left: 50%;
+}
+
+.m-o-7{
+    margin-left: 58.33333%;
+}
+
+.m-o-8{
+    margin-left: 66.66667%;
+}
+
+.m-o-9{
+    margin-left: 75%;
+}
+
+.m-o-10{
+    margin-left: 83.33333%;
+}
+
+.m-o-11{
+    margin-left: 91.66667%;
+}
+}
+
+/* Tablet 740px -> 1023px*/
+@media  (min-width: 46.25em) and (max-width: 63.9375em) {
+   .wide-t{
+       width: 644px;
+   }
+}
+
+/* >Table Từ 740px trở lên*/
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .row{
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .col{
+        padding-left: 8px;
+        padding: 8px;
+    }
+
+    /* column Table */
+    .t-0{
+        display: none;
+    }
+    
+    .t1,
+    .t2,
+    .t3,
+    .t4,
+    .t5,
+    .t6,
+    .t7,
+    .t8,
+    .t9,
+    .t10,
+    .t11{
+        display: block;
+    }
+    
+
+
+    .t-1{
+        flex: 0 0 8.33333%;
+        width: 8.33333%;
+    }
+    
+    .t-2{
+        flex: 0 0 16.66667%;
+        width: 16.66667%;
+    }
+    
+    .t-3{
+        flex: 0 0 25%;
+        width: 25%;
+    }
+    
+    .t-4{
+        flex: 0 0 33.33333%;
+        width: 33.33333%;
+    }
+    
+    .t-5{
+        flex: 0 0 41.66667%;
+        width: 41.66667%;
+    }
+    
+    .t-6{
+        flex: 0 0 50%;
+        width: 50%;
+    }
+    
+    .t-7{
+        flex: 0 0 58.33333%;
+        width: 58.33333%;
+    }
+    
+    .t-8{
+        flex: 0 0 66.66667% ;
+        width: 66.66667%;
+    }
+    
+    .t-9{
+        flex: 0 0 75%;
+        width: 75%;
+    }
+    
+    .t-10{
+        flex: 0 0 83.33333%;
+        width: 83.33333%;
+    }
+    
+    .t-11{
+        flex: 0 0 91.66667%;
+        width: 91.66667%;
+    }
+    
+    .t-12{
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+ /* Margin offset để đẩy phần tử */
+ .t-o-1{
+    margin-left: 8.33333%;
+ }
+
+
+ .t-o-2{
+    margin-left: 16.66667%;
+ }
+
+
+ .t-o-3{
+    margin-left: 25%;
+ }
+
+
+ .t-o-4{
+    margin-left: 33.33333%;
+ }
+
+
+ .t-o-5{
+    margin-left: 41.66667%;
+ }
+
+
+ .t-o-6{
+    margin-left: 50%;
+ }
+
+
+ .t-o-7{
+    margin-left: 58.33333%;
+ }
+
+
+ .t-o-8{
+    margin-left: 66.66667%;
+ }
+
+
+ .t-o-9{
+    margin-left: 75%;
+ }
+
+
+ .t-o-10{
+    margin-left: 83.33333%;
+ }
+
+
+ .t-o-11{
+    margin-left: 91.66667%;
+ }
+        
+}
+
+
+/* Từ 1113px trở lên */
+@media (min-width: 69.5625em) {
+    .row{
+        margin-left: -6px;
+        margin-right: -6px;
+    }
+
+    /* Bỏ khoảng cách gutters cho row */
+    .no-gutters{
+       margin-left: -5px;
+       margin-right: -5px;
+    }
+
+    .col{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+     /* Bỏ khoảng cách gutters cho col */
+    .no-gutters .col{
+        padding-left: 5px;
+        padding-right: 5px;
+     }
+ 
+
+    /* Column PC */
+    .p-0{
+        display: none;
+    }
+    
+    
+    .p1,
+    .p2,
+    .p3,
+    .p4,
+    .p5,
+    .p6,
+    .p7,
+    .p8,
+    .p9,
+    .p10,
+    .p11{
+        display: block;
+    }
+
+
+    .p-1{
+        flex: 0 0 8.33333%;
+        width: 8.33333%;
+    }
+    
+    .p-2{
+        flex: 0 0 16.66667%;
+        width: 16.66667%;
+    }
+
+    .p-2-4{
+        flex: 0 0 20%;
+        width: 20%;
+    }
+    
+    .p-3{
+        flex: 0 0 25%;
+        width: 25%;
+    }
+    
+    .p-4{
+        flex: 0 0 33.33333%;
+        width: 33.33333%;
+    }
+    
+    .p-5{
+        flex: 0 0 41.66667%;
+        width: 41.66667%;
+    }
+    
+    .p-6{
+        flex: 0 0 50%;
+        width: 50%;
+    }
+    
+    .p-7{
+        flex: 0 0 58.33333%;
+        width: 58.33333%;
+    }
+    
+    .p-8{
+        flex: 0 0 66.66667% ;
+        width: 66.66667%;
+    }
+    
+    .p-9{
+        flex: 0 0 75%;
+        width: 75%;
+    }
+    
+    .p-10{
+        flex: 0 0 83.33333%;
+        width: 83.33333%;
+    }
+    
+    .p-11{
+        flex: 0 0 91.66667%;
+        width: 91.66667%;
+    }
+    
+    .p-12{
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+      /* Margin offset để đẩy phần tử */
+  .p-o-1 { 
+    margin-left: 8.33333%;
+  }
+
+
+  .p-o-2 { 
+    margin-left: 16.66667%;
+  }
+
+
+  .p-o-3 { 
+    margin-left: 25%;
+  }
+
+
+  .p-o-4 { 
+    margin-left: 33.33333%;
+  }
+
+
+  .p-o-5 { 
+    margin-left: 41.66667%;
+  }
+
+
+  .p-o-6 { 
+    margin-left: 50%;
+  }
+
+
+  .p-o-7 { 
+    margin-left: 58.33333%;
+  }
+
+
+  .p-o-8 { 
+    margin-left: 66.66667%;
+  }
+
+
+  .p-o-9 { 
+    margin-left: 75%;
+  }
+
+
+  .p-o-10  {
+    margin-left: 83.33333%;
+  }
+
+
+  .p-o-11 {
+    margin-left: 91.66667%;
+  }
+
+}
+
+
+/* PC có độ phân giải từ 1024px -1239px */
+@media (min-width: 64em) and (max-width: 77.4375em) {
+    .wide-ipad-pro{
+        width: 984px;
+    }
+    .wide .row{
+        margin-left: -6px;
+        margin-right: -6px;
+    }
+  
+    /* Bỏ khoảng cách gutters cho row */
+    .wide .no-gutters{
+        margin-left: -5px;
+        margin-right: -5px;
+     }
+
+    .wide .col{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+
+    /* Bỏ khoảng cách gutters cho col */
+    .wide .no-gutters .col{
+       padding-left: 5px;
+       padding-right: 5px;
+     } 
+
+
+    /* Colum for PC có độ phân giải thấp */
+    .wide .p-0{
+        display: none;
+    }
+    
+    
+    .wide .p1,
+    .wide .p2,
+    .wide .p3,
+    .wide .p4,
+    .wide .p5,
+    .wide .p6,
+    .wide .p7,
+    .wide .p8,
+    .wide .p9,
+    .wide .p10,
+    .wide .p11{
+        display: block;
+    }
+
+
+    .wide .p-1{
+        flex: 0 0 8.33333%;
+        width: 8.33333%;
+    }
+    
+    .wide .p-2{
+        flex: 0 0 16.66667%;
+        width: 16.66667%;
+    }
+    
+    .wide .p-3{
+        flex: 0 0 25%;
+        width: 25%;
+    }
+    
+    .wide .p-4{
+        flex: 0 0 33.33333%;
+        width: 33.33333%;
+    }
+    
+    .wide .p-5{
+        flex: 0 0 41.66667%;
+        width: 41.66667%;
+    }
+    
+    .wide .p-6{
+        flex: 0 0 50%;
+        width: 50%;
+    }
+    
+    .wide .p-7{
+        flex: 0 0 58.33333%;
+        width: 58.33333%;
+    }
+    
+    .wide .p-8{
+        flex: 0 0 66.66667% ;
+        width: 66.66667%;
+    }
+    
+    .wide .p-9{
+        flex: 0 0 75%;
+        width: 75%;
+    }
+    
+    .wide .p-10{
+        flex: 0 0 83.33333%;
+        width: 83.33333%;
+    }
+    
+    .wide .p-11{
+        flex: 0 0 91.66667%;
+        width: 91.66667%;
+    }
+    
+    .wide .p-12{
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+  /* Margin offset để đẩy phần tử */
+ .wide .p-o-1 {
+    margin-left: 8.33333%;
+  }
+
+
+ .wide .p-o-2 {
+    margin-left: 16.66667%;
+  }
+
+
+ .wide .p-o-3 {
+    margin-left: 25%;
+  }
+
+
+ .wide .p-o-4 {
+    margin-left: 33.33333%;
+  }
+
+
+ .wide .p-o-5 {
+    margin-left: 41.66667%;
+  }
+
+
+ .wide .p-o-6 {
+    margin-left: 50%;
+  }
+
+
+ .wide .p-o-7 {
+    margin-left: 58.33333%;
+  }
+
+
+ .wide .p-o-8 {
+    margin-left: 66.66667%;
+  }
+
+
+ .wide .p-o-9 {
+    margin-left: 75%;
+  }
+
+
+ .wide .p-o-10{
+    margin-left: 83.33333%;
+  }
+
+
+ .wide .p-o-11{
+    margin-left: 91.66667%;
+  }
+}

@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #fff;
+}
+
+.main article{
+    width: 1200px;
+    min-height: 100vh;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+/* CSS navigation */
+.nav-pc{
+    display: flex;
+    align-items: center;
+    height: 48px;
+    background: #333;
+}
+
+.nav-list{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 48px;
+}
+
+/* End navigation */
+
+/* CSS article */
+article{
+    padding: 0 16px;
+    line-height: 1.6rem;
+}
+
+article img{
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 32px auto;
+}
+
+/* Mobile nav */
+ .nav-menu-bar{
+     width: 28px;
+     height: 28px;
+     color: #fff;
+     display: none;
+     margin-left: 8px;
+ }
+
+ /* Overlay */
+ .nav-overlay{
+     position: fixed;
+     top: 0;
+     right: 0;
+     left: 0;
+     bottom: 0;
+     background-color: rgb(0,0,0,0.3);
+     display: none;
+     animation: fadein linear 0.2s;
+ }
+
+/* Nav Moblie */
+.nav-mobile{
+   position: fixed;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   width: 320px;
+   max-width: 100%;
+   background-color: #fff;
+   transform: translateX(-100%);
+   opacity: 0;
+   transition: transform linear 0.2s, opacity linear 0.2s;
+}
+
+.nav-mobile-list{
+   margin-top: 24px;
+   list-style-type: none;
+}
+
+.nav-mobile-link{
+   text-decoration: none;
+   color: #333;
+   display: block;
+   padding: 8px 0;
+   font-size: 1.4rem;
+}
+
+.nav-close{
+    width: 28px;
+    height: 28px;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #666;
+}
+
+#nav-click{
+    display: none;
+}
+
+#nav-click:checked ~ .nav-overlay{
+    display: block;
+}
+
+#nav-click:checked ~ .nav-mobile{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+@media (max-width: 63.9375em) {
+     .nav-menu-bar{
+         display: block;
+     }
+     .nav-list{
+         display: none;
+     }
+    .main article{
+        width: 100%;
+    }
+    }
+ @keyframes fadein{
+     from{
+         opacity: 0;
+     }
+     to{
+         opacity: 1;
+     }
+ }
+ 

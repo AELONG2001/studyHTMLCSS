@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(0,0,0,0.05);
+}
+
+.main{
+    width: 1200px;
+    min-height: 100vh;
+    max-width: 100%;
+    margin: 10px auto 360px;
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
+.main-product{
+    display: flex;
+    padding: 10px;
+}
+
+.main-product-img{
+    width: 40%;
+    padding-top: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+
+/* CSS info */
+
+.main-product-info{
+    width: 60%;
+    padding: 10px;
+
+}
+
+
+/* CSS layout */
+.column-list{
+    list-style-type: none;
+
+}
+
+.column-container{
+    margin: 40px;
+    padding: 12px 0;
+    background-color: #fff;
+    display: flex;
+}
+
+.column-menu{
+    width: 20%;
+    padding: 0 16px;
+}
+
+
+.column-container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-layout{
+    width: 25%;
+    padding: 0 25px;
+}
+
+/* column future */
+.column-future{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.future-item{
+    padding: 12px 16px;
+    margin-top: 16px;
+    flex-basis: 30%;
+}
+
+.future-item:nth-child(1){
+    background-color: aqua;
+}
+
+.future-item:nth-child(2){
+    background-color: purple;
+}
+.future-item:nth-child(3){
+    background-color: green;
+}
+
+
+ /* Table and Moblie */
+ @media only screen and (max-width: 63.9375em) {
+    .main-product{
+        flex-direction: column-reverse;
+    }
+    .main-product-info{
+        width: 100%;
+    }
+ }
+
+
+/* Table */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .main-product-img{
+        width: 85%;
+        padding-top: 85%;
+    }
+    .item-layout{
+        width: 33.33333%;
+    }
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 46.1875em) {
+    .main-product-img{
+        width: 95%;
+        padding-top: 85%;
+    }
+
+    .item-layout{
+        width: 100%;
+    }
+    .column-menu{
+        display: none;
+    }
+    .column-future{
+        flex-direction: column;
+    }
+}
